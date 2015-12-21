@@ -27,6 +27,14 @@
 .jumbotron{
 	margin-bottom: 0;
 	background-color: khaki;
+	word-wrap:break-word;
+    white-space:initial;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.main-content{
+	text-align: center;
+	margin: 0 auto;
 }
 
 .main-feature{
