@@ -1,19 +1,33 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body{
+	font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 .mw{
 	max-width: 1200px;
-	border: 1px solid purple;
+	/*border: 1px solid purple;*/
 	margin: 0 auto;
 }
 
+p {
+	margin: 0;
+}
+
+
+/*
+-------------------------
+admin bar
+-------------------------
+*/
 .admin-bar{
-	background-color: blue;
-	height: 70px;
+	background-color: #46B7D5;
+	height: 50px;
 }
 .admin-btn-group{
 	float: right;
-	padding: 15px 15px 0 0;
+	padding: 8px 15px 0 0;
 }
 @media (max-width: 767px){
 	.admin-btn-group{
@@ -24,99 +38,32 @@
 }
 }
 
-.jumbotron{
-	margin-bottom: 0;
-	background-color: khaki;
-	word-wrap:break-word;
-    white-space:initial;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.main-content{
-	text-align: center;
-	margin: 0 auto;
-}
-
-.main-feature{
-	margin: 0 auto;
-	clear: both;
-}
-
-.contact-bar{
-	background-color: blue;
-	height: 70px;
-	line-height: 70px;
-}
-p {
-	margin: 0;
-}
-
-@media (max-width: 767px){
-	.contact-bar{
-	text-align: center;
-	line-height: inherit;
-}
-}
-@media(min-width: 767px){
-	p.secure-logo{
-		float: right;
-	}
-}
-
-.tabs-bar{
-	background-color: indianred;
-	height: 300px;
-	float: none;
-	clear: both;
-}
-
-.social-bar{
-	background-color: green;
-	height: 70px;
-	line-height: 70px;
-}
-@media (max-width: 767px){
-	.social-bar{
-	text-align: center;
-	line-height: inherit;
-}
-}
-@media(min-width: 767px){
-	.company{
-		float: right;
-	}
-}
-
-footer{
-	background-color: gray;
-	height: 200px;
-	padding-top: 30px;
-}
-.copyright-right{
-	text-align: right;
-}
-@media (max-width: 767px){
-	footer{
-	text-align: center;
-}
-.copyright-right{
-	text-align: center;
-}
-}
-
 /*
 -------------------------
 large & med nav
 -------------------------
 */
 .navbar {
-background-color: lightgray;	
+background-color: white;	
 padding: 10px 5px;
+box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+.navbar-default .navbar-nav>li>a{
+	font-size: 15px;
+	color: #333;
+	border: 1px solid transparent;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #EEE;
+    background: linear-gradient( 180deg, #FFF, #F7F7F7 );
 }
 @media (min-width: 768px) {
 .navbar-collapse ul {
 	margin-top: 10px;
-	border: 1px solid orange;
+	/*border: 1px solid orange;*/
 }
 }
 /*
@@ -135,9 +82,217 @@ small nav
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	width: 100%;
 	text-align: center;
-	border: 1px solid cyan;
+	/*border: 1px solid cyan;*/
 }
 }
-	.logo{float:left;}
-	.navbar{margin-bottom: 0;}
+.logo{float:left;}
+.navbar{margin-bottom: 0;}
+
+
+/*
+-------------------------
+jumbotron
+-------------------------
+*/
+.jumbotron{
+	margin-bottom: 0;
+	/*background:url(http://www.barbaracorcoran.com/inc/skins/custom/img/barabara-splash.jpg);*/
+	background:url(img/barbara-splash-desktop.jpg);
+	background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+	/*background-color: white;*/
+	word-wrap:break-word;
+    white-space:initial;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+@media (max-width: 991px){
+.jumbotron{
+	margin-bottom: 0;
+	background:url(img/barbara-splash-mobile-1.jpg);
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+    /*background-attachment: fixed;*/
+    background-position: center top;
+	/*background-color: white;*/
+	word-wrap:break-word;
+    white-space:initial;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	
+}
+.blank-content{
+ height: 300px;
+}
+.main-content{
+	padding-top: 200px;
+}
+/*.blank-content{
+	background:url(img/barbara-splash-mobile.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 400px;
+	width: 100%;
+	
+}*/
+}
+.main-content{
+	text-align: center;
+	margin: 0 auto;
+}
+.main-content > h1 {
+	color: #0085b2;
+	font-weight: 800;
+}
+.main-content > p {
+	color: #333;
+	font-size: 18px;
+	padding: 20px 0;
+}
+span.before{
+	color: #46B7D5;
+	font-weight: 400;
+	font-style:italic;
+}
+
+/*
+-------------------------
+contact
+-------------------------
+*/
+.contact-bar{
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	background-color: #46B7D5;
+	height: auto;
+	display: inline-block;
+	width: 100%;
+	line-height: 70px;
+}
+.chat-bar-link{
+	color: #ffffff;
+}
+.chat-bar-link:hover{
+	color: #ffffff;
+}
+.fa-phone:before,
+.fa-comment:before{
+	color: #0085b2;
+}
+img.trust-seal{
+	padding-top: 25px;
+}
+/*.__break {
+   display: block;
+}*/
+.contact-info > div{
+	display: inline-block;
+}
+
+@media (max-width: 767px){
+.contact-bar{
+	text-align: center;
+	line-height: inherit;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*.contact-info > div{
+	display: block;
+}*/
+}
+@media(min-width: 767px){
+img.trust-seal{
+	float: right;
+	padding-top: 25px;
+}
+}
+
+
+/*
+-------------------------
+features
+-------------------------
+*/
+.main-feature{
+    margin: 30px auto;
+    overflow: hidden;
+}
+.feature-heading{
+	color: #0085b2;
+	font-weight: 700;
+	font-size: 20px;
+}
+.feature-desc{
+	color: #333;
+	padding: 10px 0;
+}
+.main-feature-link{
+	color: orange;
+	font-weight: 600;
+}
+.main-feature-link:hover{
+	color: orange;
+	font-weight: 600;
+}
+
+
+/*
+-------------------------
+tabs
+-------------------------
+*/
+.tabs-bar{
+	background: url(https://www.ecommission.com/img/css/teal-bg.png);
+	height: 300px;
+	margin-top: 30px;
+}
+
+
+/*
+-------------------------
+social nav
+-------------------------
+*/
+.social-bar{
+	background-color: green;
+	height: 70px;
+	line-height: 70px;
+}
+@media (max-width: 767px){
+	.social-bar{
+	text-align: center;
+	line-height: inherit;
+}
+}
+@media(min-width: 767px){
+	.company{
+		float: right;
+	}
+}
+
+
+/*
+-------------------------
+footer
+-------------------------
+*/
+footer{
+	background-color: gray;
+	height: 200px;
+	padding-top: 30px;
+}
+.copyright-right{
+	text-align: right;
+}
+@media (max-width: 767px){
+	footer{
+	text-align: center;
+}
+.copyright-right{
+	text-align: center;
+}
+}
 

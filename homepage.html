@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="homepage.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="tabs.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/FontAwesome.otf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.woff">
 </head>
 <body>
 
@@ -41,49 +53,228 @@
       </div>
 
 <div class="jumbotron">
-<div class="mw">
-<div class="col-md-6"></div>
-<div class="col-md-6 main-content">
-<h1>Get paid your real estate commissions before closing</h1>
-  <p>Apply in minutes. No credit check. Fast and easy.</p>
-    <button class="btn btn-lg btn-primary">Let's Get Started</button>
-</div>
-</div>
+  <div class="mw">
+    <div class="col-md-5 blank-content"></div>
+    <div class="col-md-7 main-content">
+      <h1>Get paid your real estate commissions <span class="before">before</span> closing</h1>
+      <p>Apply in minutes. No credit check. Fast and easy.</p>
+      <button class="btn btn-lg btn-primary">Let's Get Started</button>
+    </div>
+  </div>
 </div>
 
 <section class="contact-bar">
-<div class="mw">
-<div class="col-sm-8">
-<p><strong>We're here to help:</strong> i 555-555-5555 i Click to Chat</p>
-</div>
-<div class="col-sm-4">
-<p class="secure-logo">secured & verified</p>
-</div>
-</div>
+  <div class="mw">
+    <div class="col-sm-8 contact-info">
+      <div><strong>We're here to help: &nbsp;</strong></div>
+      <div><i class="fa fa-phone"></i> 555-555-5555 &nbsp;</div>
+      <div><i class="fa fa-comment"></i> <a class="chat-bar-link" href="#">Click to Chat</a></div>
+    </div>
+    <div class="col-sm-4">
+      <img class="trust-seal" src="img/trust-white.png" alt="">
+    </div>
+  </div>
 </section>
 
 <section class="main-feature mw">
-<div class="col-sm-4 text-center">
-<h4>Vulputate Lorem Euismod</h4>
-<img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<a href="#">Ultricies Tortor Consectetur</a>
-</div>
-<div class="col-sm-4 text-center">
-<h4>Vulputate Lorem Euismod</h4>
-<img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<a href="#">Ultricies Tortor Consectetur</a>
-</div>
-<div class="col-sm-4 text-center">
-<h4>Vulputate Lorem Euismod</h4>
-<img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<a href="#">Ultricies Tortor Consectetur</a>
-</div>
+  <div class="col-sm-4 text-center">
+    <h4 class="feature-heading">How It Works</h4>
+    <img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
+    <p class="feature-desc">Learn how getting a real estate commission advance works.</p>
+    <a class="main-feature-link" href="#"><i class="fa fa-play"></i> Watch how it works</a>
+  </div>
+  <div class="col-sm-4 text-center">
+    <h4 class="feature-heading">Our Alliances</h4>
+    <img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
+    <p class="feature-desc">eCommission is the official supplier to the most successful real estate organizations.</p>
+    <a class="main-feature-link" href="#">Learn more</a>
+  </div>
+  <div class="col-sm-4 text-center">
+    <h4 class="feature-heading">Our Valuable Service</h4>
+    <img class="img-responsive" src="http://goo.gl/UyyU3B" alt="">
+    <p class="feature-desc">Learn why Barbara believes eCommission is a valuable tool for real estate professionals.</p>
+    <a class="main-feature-link" href="#"><i class="fa fa-play"></i> Hear her tips for success</a>
+  </div>
 </section>
 
-<section class="tabs-bar"></section>
+<section class="tabs-bar">
+
+<div class="tabWrapper">
+<ul class="tabs">
+<li class="active">
+<a class="" href="#tab1">What to Expect</a>
+</li>
+<li>
+<a class="" href="#tab2">What It Costs</a>
+</li>
+<li>
+<a href="#tab3">What if the Sale Cancels?</a>
+</li>
+</ul>
+
+<div class="panes">
+<div class="pane active" id="tab1">
+<div class="row" style="padding-bottom:0;">
+<div class="col-sm-6 lm-read">
+<p class="lm-p">From start to finish, the eCommission process for advancing your commissions is fast and confidential. To qualify, you will need the following:</p>
+<ul id="lm-li">
+<li>• An active real estate license</li>
+<li>• A pending sale closing within 120 days</li>
+<li>• Escrow file opened</li>
+<li>• A valid bank account</li>
+</ul>
+</div>
+
+<div class="col-sm-6">
+<div class="row lm-row lm-container">
+<div class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/1-ApplyOnline.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">1.</strong> Submit application online in minutes.</p>
+</div>
+</div>
+
+<div id="underwriting" class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/3-Underwriting.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">3.</strong> Funds wired in 1 business day.</p>
+</div>
+</div>
+
+<div id="agreements-small" class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/2-ReceiveAgreements.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">2.</strong> Receive agreement for you and your broker to approve.</p>
+</div>
+</div>
+</div>
+
+<div class="row lm-container" style="padding-bottom:0">
+<div id="agreements" class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/2-ReceiveAgreements.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">2.</strong> Receive agreement for you and your broker to approve.</p>
+</div>
+</div>
+
+<div id="underwriting-small" class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/3-Underwriting.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">3.</strong> Funds wired in 1 business day.</p>
+</div>
+</div>
+
+<div class="col-sm-6 col-xs-12 lm-icon-group">
+<img alt="" class="pull-left lm-icon" height="75" src="https://www.ecommission.com/img/icons/4-Funding.png">
+<div>
+<p class="lm-icon-text"><strong style="font-size:14px;">4.</strong> Advance repaid directly to eCommission at closing.</p>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div><!-- end #tab1 -->
+
+<div class="pane" id="tab2">
+<h2 class="center">Commission Advance Estimator<br>
+<strong>Get up to $15,000</strong></h2>
+
+<h3 class="center">Slide to select your commission advance</h3>
+
+<div class="slider" id="commission"></div><!-- end .#commission -->
+
+<div class="row">
+<div class="col-sm-6">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr class="advance">
+<td>Advance Amount</td>
+
+<td>
+<div id="advanceAmount">
+$0
+</div>
+</td>
+</tr>
+
+<tr class="underline">
+<td>Fee</td>
+
+<td>
+<div id="feeAmount">
+$750
+</div>
+</td>
+</tr>
+
+<tr class="total">
+<td>Due At Closing</td>
+
+<td>
+<div id="dueAmount">
+$8,250
+</div>
+</td>
+</tr>
+</table>
+</div><!-- end .col-sm-6 -->
+
+<div class="col-sm-6 btnContainer" id="hpgslider">
+<p class="center"><br>
+<a class="joinButton btn orange btn-lg">Let's Get Started<br>
+<small>No hidden fees. No credit check.</small></a></p>
+
+<p class="center small">Your fees are tax deductible!</p>
+</div><!-- end .col-sm-6 btnContainer -->
+
+<div class="col-sm-12">
+<br>
+<br>
+
+<h3 class="center">The cost of an <strong>eCommission</strong>
+advance</h3><br>
+
+<ul>
+<li>Example is based on a 40 day closing. Longer advances
+available up to 120 days.</li>
+
+<li>The fee is added to your advance, meaning you pay nothing
+upfront to use this service.</li>
+
+<li>There is a 20-day grace period from the closing date to
+have the advance repaid without any additional cost.</li>
+
+<li>Advance limits may vary based on sales production.</li>
+</ul><br>
+
+<div class="offer">
+<strong>NEW CUSTOMER BONUS</strong> Receive 30% off your fee!
+Use code NEW30
+</div>
+</div>
+</div><!-- end .row -->
+</div><!-- end #tab2 -->
+
+<div class="pane" id="tab3">
+<div class="row" id="hpgslider">
+<p class="center"><img class="responsive" height="100" src=
+"https://www.ecommission.com/img/page/90percent.png" width="300" alt=""></p>
+
+<p class="center">On average, 90% of single family residential
+sales close as expected. In those rare instances when a sale
+falls through, simply replace the advance using future earned
+commissions.</p><br>
+
+<p class="center"><a class="joinButton btn orange btn-lg">Let's
+Get Started<br>
+<small>Apply in minutes. No credit check.</small></a></p>
+
+<p class="center small">Your fees are tax deductible!</p>
+</div>
+</div><!-- end #tab3 -->
+</div><!-- end .panes -->
+</div><!-- end .tabWrapper -->
+
+</section>
 
 <section class="social-bar">
 <div class="mw">
@@ -121,6 +312,7 @@
 <div id="mq-tracker"></div><style>#mq-tracker{height:40px;width:100%;position:fixed;bottom:0;left:0;line-height:40px;padding-left:20px;font-family:sans-serif;font-size:12px;color:#fff;opacity:.5}@media(max-width:320px){#mq-tracker{background-color:#5f9ea0}#mq-tracker:after{content:"NARROW: 321px & less"}}@media(min-width:321px){#mq-tracker{background-color:red}#mq-tracker:after{content:"DEFAULT: 479px - 320px"}}@media(min-width:480px){#mq-tracker{background-color:green}#mq-tracker:after{content:"EXTRA SMALL: 480px - 767px"}}@media(min-width:768px){#mq-tracker{background-color:#00f}#mq-tracker:after{content:"SMALL: 768px - 991px"}}@media(min-width:992px){#mq-tracker{background-color:purple}#mq-tracker:after{content:"MEDIUM: 992px - 1199px"}}@media(min-width:1200px){#mq-tracker{background-color:brown}#mq-tracker:after{content:"LARGE: 1200px & up"}}</style>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://www.ecommission.com/js/zozo.accordion.min.js"></script>
 </body>
 </html>
